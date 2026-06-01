@@ -5,7 +5,7 @@
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
 	<key>command</key>
-	<string>ruby18 -e '
+	<string>ruby -e '
 require ENV["TM_BUNDLE_SUPPORT"] + "/lib/historyList.rb"
 print HistoryList.new(STDIN.read + "\n&gt; ").list.join("\n")
 ' | pbcopy
